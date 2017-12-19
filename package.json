@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-watchlist",
+  "version": "0.1.0",
+  "description": "watchlist application to track movies and series",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatrickKubica/nodejs-watchlist.git"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "nodejs"
+  ],
+  "author": "Patrick Kubica",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PatrickKubica/nodejs-watchlist/issues"
+  },
+  "homepage": "https://github.com/PatrickKubica/nodejs-watchlist#readme"
+}

@@ -1,5 +1,7 @@
 # nodejs-watchlist
-Watchlist application using the Node.js framework Express and MongoDB that lets you track and archive the movies and series you intent to watch
+Watchlist application using the Node.js framework Express and MongoDB that lets you track and archive the movies you intent to watch.
+
+Pug is used as the template engine.
 
 **Currently under development**
 

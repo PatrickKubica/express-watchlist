@@ -1,4 +1,9 @@
 extends layout
 
 block content
-  h1 movies will be listed here
+  ul.list-group
+    each movie, i in movies
+      li.list-group-item
+        h4 #{movie.title}
+        h5 Directed by #{movie.director}
+        h6 #{movie.description}

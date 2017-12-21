@@ -23,6 +23,7 @@
   "homepage": "https://github.com/PatrickKubica/nodejs-watchlist#readme",
   "dependencies": {
     "express": "^4.16.2",
+    "mongoose": "^4.13.7",
     "pug": "^2.0.0-rc.4"
   },
   "devDependencies": {

@@ -23,7 +23,7 @@ npm run lint
 ## Start the Application
 
 
-You can start the application with
+The application can be started by running
 ```bash
 npm start
 ```

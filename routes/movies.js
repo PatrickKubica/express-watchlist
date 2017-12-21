@@ -5,7 +5,16 @@ const router = express.Router();
 
 // Show all movies
 router.get('/list', (req, res) => {
-  res.render('movies_list');
+  Movie.find({}, (err, movies) => {
+    if (err) {
+      // eslint-disable-next-line
+      console.log(err);
+    } else {
+      res.render('movies_list', {
+        movies,
+      });
+    }
+  });
 });
 
 // Add a new movie

@@ -5,11 +5,13 @@ const router = express.Router();
 
 // Show all movies
 router.get('/list', (req, res) => {
+  // load all movies from the database
   Movie.find({}, (err, movies) => {
     if (err) {
       // eslint-disable-next-line
       console.log(err);
     } else {
+      // render list template and pass movies to it
       res.render('movies_list', {
         movies,
       });
@@ -24,17 +26,19 @@ router.get('/add', (req, res) => {
 
 // processing of add movie request
 router.post('/add', (req, res) => {
+  // construct new movie object for persisting in the database
   const movie = new Movie();
   movie.title = req.body.title;
   movie.director = req.body.director;
   movie.description = req.body.description;
 
+  // save the new object in the database
   movie.save((err) => {
     if (err) {
       // eslint-disable-next-line no-console
       console.log(err);
     } else {
-      res.redirect('/');
+      res.redirect('/movies/list');
     }
   });
 });

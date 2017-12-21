@@ -1,3 +1,3 @@
 module.exports = {
-  database: '<>your database goes here>',
+  database: '<your database settings>',
 };

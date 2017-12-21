@@ -4,7 +4,8 @@
   "description": "watchlist application to track movies and series",
   "main": "app.js",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint ."
+    "lint": "./node_modules/.bin/eslint .",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",

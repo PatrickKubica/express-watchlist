@@ -5,7 +5,7 @@ Pug is used as the template engine.
 Bootstrap is used for responsiveness and styling.
 
 ## Installation
-Too install this project please run
+To install this project please run
 ```bash
 npm install
 ```

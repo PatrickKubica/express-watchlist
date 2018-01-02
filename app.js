@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const path = require('path');
 const bodyParser = require('body-parser');
 // Make sure to add the configuration for your database to the config file
 const databaseConfig = require('./config/database');
@@ -22,6 +23,10 @@ const app = express();
 
 // Specify Pug as template engine
 app.set('view engine', 'pug');
+
+// Specify Public Folder
+app.use(express.static(path.join(__dirname, 'public')));
+
 // Configure Body-Parser
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());

@@ -43,4 +43,19 @@ router.post('/add', (req, res) => {
   });
 });
 
+// Delete movie
+router.delete('/:id', (req, res) => {
+  const query = { _id: req.params.id };
+
+  Movie.remove(query, (err) => {
+    if (err) {
+      // eslint-disable-next-line no-console
+      console.log(err);
+      res.redirect('/');
+    } else {
+      res.send('Success');
+    }
+  });
+});
+
 module.exports = router;
